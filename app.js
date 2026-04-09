@@ -11,3 +11,16 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
 res.sendFile('views/index.html', { root: __dirname })
 })
+
+data = {'integrantes':[
+
+{'nome':'Matheus Silva Ribeiro'},
+{'nome':'Tauane Carolina'},
+{'nome':'Nicolas Noronha'}
+
+]}
+app.get('/integrantes', (req, res) => {
+
+res.json(data)
+
+})
