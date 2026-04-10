@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 
 // Essa é a forma de implementar este endpoint
 app.get('/', (req, res) => {
-res.sendFile('views/index.html', { root: __dirname })
+res.sendFile('src/views/index.html', { root: __dirname })
 })
 
 data = {'integrantes':[
